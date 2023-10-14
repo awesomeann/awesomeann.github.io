@@ -1,0 +1,268 @@
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&display=swap');
+/* color variables */
+:root {
+  --blue: rgb(35, 0, 193);
+  --dark-grey: rgb(36, 39, 46);
+  --light-grey: rgb(231, 239, 255);
+  --purple: rgb(77, 0, 193);
+  --text-white: rgb(249, 249, 255);
+  --mid-grey: #5a6272ff;
+  --red: rgb(226, 59, 129);
+;
+/*  inherited colors  */
+  --text: var(--onyx);
+  --h1: var(--dark-grey);
+  --h2: var(--onyx);
+  --h3: var(--onyx);
+  --h4: var(--onyx);
+  --h5: var(--onyx);
+  --h6: var(--onyx);
+}
+
+/* default font style */
+body{
+  font-family: 'Montserrat', sans-serif;
+  color:var(--text);
+  background: linear-gradient(rgb(163, 241, 255) ,rgb(232, 236, 255), rgb(246, 244, 255), rgb(217, 255, 251), rgb(248, 219, 239),  rgb(179, 223, 253) );
+  
+  
+}
+
+/* Heading style */
+h1 {
+   color:var(--h1);
+   font-family: 'Montserrat', sans-serif;
+   font-size: 40px;
+   margin-block-start: 0.20em;
+    margin-block-end: 0.20em;
+}
+
+h2 {
+  color:var(--h2);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  
+}
+
+h3 {
+  color:var(--h3);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+  color:var(--h4);
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+h5 {
+  color:var(--h5);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+  color:var(--h6);
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  color:var(--h4);
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+ color: var(--red);
+ display: flexbox;
+ flex-direction: row;
+ justify-content: flex-end;
+}
+
+em { 
+  color:var(--red);
+  font-family: 'Montserrat', sans-serif;
+}
+
+section{
+  padding: 20px;
+}
+
+/* style to make style guide */
+
+
+/* body {
+  padding: 20px;
+}   */
+/* 
+section {
+
+} */
+
+img{
+  width:100%;
+
+ }
+
+
+/* classes */
+.nav-bar{
+
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.423);
+}
+
+.nav-item{
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+
+
+
+.social{
+height: 50px;
+width: 50px;
+text-decoration: none;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.description {
+background-color:transparent;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.socials{
+  display: flex;
+  justify-content: space-around;
+  
+  }
+  
+.about-me {
+  background-color: rgba(254, 254, 253, 0.500);
+  padding: 20px;
+}
+
+.project{
+  text-decoration: none;
+  /* background-image: linear-gradient(to right, rgb(206, 246, 255) , rgb(229, 225, 252)); */
+  background-color: rgba(255, 255, 255, 0.500);
+  font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+  justify-content: space-around;
+  color:var(--dark-grey);
+  width: 20rem;
+  height: 15rem;
+  border-radius: 1rem;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.project-img{
+max-height: 10rem;
+max-width: 17rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.500);
+  align-self: center;
+  max-width: 100%;
+  border-radius: 4px;
+  color:var(--text);
+}
+
+
+.input {
+padding: 10px;
+border: 2px solid #fff;
+border-radius: 4px;
+background-color: #fff;
+font-size: 0.8rem;
+text-decoration: none;
+color: #000;
+margin: 10px;
+min-width: 200px;
+margin-bottom: 20px;
+}
+
+.form-section
+{
+display: flex;
+flex-direction: column;
+align-items: center; 
+
+}
+
+/* Button design */
+
+.button, #submit{
+  text-decoration: none;
+  background-color: rgb(35, 0, 193);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  display: block;
+  color: white;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 1rem;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  transition: .3s ease;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  
+ 
+}
+
+body {
+	/* background: linear-gradient( rgb(139, 222, 255) 50%, rgb(162, 244, 213) 50%); */
+  margin: 0px;
+}
+
+
+#nav-item-1{
+  color: rgb(35, 0, 193);
+}
+
+#nav-item-2{
+  color:  rgb(35, 0, 193);
+}
+
+
+#logo {
+margin:0px;
+color: var(--red);
+}
+
+#profile-photo{
+  margin-top: 30px;
+}
+
+*{
+  border: 1px solid red;
+}
+
