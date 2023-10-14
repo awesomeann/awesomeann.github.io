@@ -154,11 +154,16 @@ align-items: center;
 }
 
 .project{
+  display: flex;
+  flex-direction: column;
+}
+
+.project{
   text-decoration: none;
   /* background-image: linear-gradient(to right, rgb(206, 246, 255) , rgb(229, 225, 252)); */
   background-color: rgba(255, 255, 255, 0.500);
   font-family: 'Montserrat', sans-serif;
-    flex-direction: column;
+  flex-direction: column;
   justify-content: space-around;
   color:var(--dark-grey);
   width: 20rem;
@@ -266,3 +271,25 @@ color: var(--red);
   border: 1px solid red;
 }
 
+@media (min-width: 769px) {
+  .projects{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    #main-1{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    #profile-photo {
+      max-width: 400px;
+    }
+
+    .description{
+      max-width: 400px;
+    }
+
+ }
