@@ -111,7 +111,7 @@ img{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   background-color: rgb(232, 236, 255); 
@@ -119,21 +119,25 @@ img{
 
 .nav-item{
   font-size: 16px;
-  padding-left: 10px;
+  padding-left: 60px;
   padding-right: 10px;
   text-decoration: none;
   color: var(--onyx)
+
 }
 
 
-
+.menu{
+  margin-right: 60px;
+}
 
 .social{
-height: 50px;
-width: 50px;
+height: 40px;
+width: 40px;
 text-decoration: none;
 padding-left: 20px;
 padding-right: 40px;
+
 }
 
 .description {
@@ -146,7 +150,7 @@ align-items: center;
 .socials{
   display: flex;
   justify-content: space-around;
-  
+  margin-left: 60px;
   }
   
 .about-me {
@@ -249,7 +253,7 @@ align-items: center;
 }
 
 footer{
-  height: 40px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -322,5 +326,10 @@ color: var(--red);
 
     .nav-item{
       font-size: 20px;
+    }
+
+    .form{
+      width: 400px;
+
     }
  }
