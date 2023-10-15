@@ -269,9 +269,15 @@ align-items: center;
   transition: .3s ease;
   margin-bottom: 10px;
   margin-top: 10px;
-  
- 
 }
+
+#form-button{
+display:flex;
+justify-content: center;
+}
+
+/* FOOTER */
+
 
 footer{
   height: 80px;
@@ -286,13 +292,6 @@ footer{
 body {
 	/* background: linear-gradient( rgb(139, 222, 255) 50%, rgb(162, 244, 213) 50%); */
   margin: 0px;
-}
-
-
-
-#created-by{
-  font-weight: 300;
-  margin-right: 60px;
 }
 
 
@@ -355,6 +354,7 @@ body {
       justify-content: space-evenly;
       margin: 30px;
       margin-top: 60px;
+      margin-bottom: 80px;
   
     }
 
