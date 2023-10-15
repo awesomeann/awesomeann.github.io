@@ -1,62 +1,50 @@
-/* fonts import */
+/* -------------------fonts import------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&display=swap');
-/* color variables */
+
+/* -------------------color variables------------------- */
+
 :root {
   --blue: rgb(35, 0, 193);
-  --dark-grey: rgb(36, 39, 46);
-  --light-grey: rgb(231, 239, 255);
+  --onyx: rgb(36, 39, 46);
+  --light-purple: rgba(169, 168, 255, 0.651)
   --purple: rgb(77, 0, 193);
-  --text-white: rgb(249, 249, 255);
+  --white: rgb(255, 255, 255);
   --mid-grey: #5a6272ff;
   --red: rgb(226, 59, 129);
-;
-/*  inherited colors  */
-  --text: var(--onyx);
-  --h1: var(--dark-grey);
-  --h2: var(--onyx);
-  --h3: var(--onyx);
-  --h4: var(--onyx);
-  --h5: var(--onyx);
-  --h6: var(--onyx);
 }
 
-/* default font style */
-body{
+/* -------------------default font style------------------- */
+
+html{
   font-family: 'Montserrat', sans-serif;
-  color:var(--text);
-  width: 100%;
-  background: linear-gradient(rgb(255, 255, 255) ,rgb(232, 236, 255), rgb(246, 244, 255), rgb(217, 255, 251), rgb(248, 219, 239),  rgb(179, 223, 253) );
-
+  color: var(--onyx);
 }
 
-/* Heading style */
+
+/* -------------------Background color------------------- */
+
+body{
+  color:var(--onyx);
+  width: 100%;
+  background: linear-gradient(rgb(255, 255, 255) ,rgb(232, 236, 255), rgb(246, 244, 255), rgb(217, 255, 251), rgb(235, 219, 248),  rgb(179, 223, 253) );
+}
+
+
+
+
+
+/* -------------------Text styles------------------- */
+
 h1 {
-  
   font-size: 40px;
-  margin-block-start: 0.20em;
-  margin-block-end: 0.20em;
+  margin-block-start: 0.10em;
+  margin-block-end: 0.10em;
   font-weight: 600;
 }
 
 h2 {
   font-size: 24px;
-}
-
-
-
-h4 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight:300px;
-}
-
-h5 {
-  color:var(--h5);
-  font-family: 'Montserrat', sans-serif;
-}
-
-h6 {
-  color:var(--h6);
-  font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -65,49 +53,45 @@ p {
   font-size: large;
 }
 
+/* -------------------Text Decoration------------------- */
+
+.title-underline{
+  width: 200px;
+  border-bottom: solid 5px var(--red);
+  margin-bottom: 20px;
+}
+ 
+  /* -------------------Image Styles------------------- */
+
 nav{
- color: var(--onyx);
- display: flexbox;
- flex-direction: row;
- justify-content: flex-end;
+  color: var(--onyx);
+  display: flexbox;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-
-em { 
-  color:var(--red);
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* section{
-  padding: 20px;
-} */
-
-/* style to make style guide */
-
-
-/* body {
-  padding: 20px;
-}   */
-/* 
-section {
-
-} */
-
+ 
 img{
   width:100%;
-
  }
 
-
-/* classes */
+/* -------------------Header style------------------- */
+ 
+nav{
+  color: var(--onyx);
+  display: flexbox;
+  flex-direction: row;
+  justify-content: flex-end;
+ }
+ 
 .nav-bar{
   height: 40px;
+  padding:15px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  background-color: rgb(232, 236, 255); 
 }
 
 .nav-item{
@@ -124,10 +108,20 @@ img{
   margin-right: 10px;
 }
 
+/* -------------------Section with Social Media Icons------------------- */
+
+.socials{
+  width:0px;
+  height:0px;
+  }
+
+/* -------------------Each Social Media Icon------------------- */
+
 .social{
   width:0px;
   height:0px;
 }
+
 
 
 .language{
@@ -135,7 +129,7 @@ height: 40px;
 width: 40px;
 text-decoration: none;
 padding-left: 20px;
-padding-right: 40px;
+padding-right: 20px;
 
 }
 
@@ -147,32 +141,46 @@ align-items: center;
 padding:20px;
 }
 
-.socials{
-  width:0px;
-  height:0px;
-  }
-  
+
+/* -------------------About Me Section------------------- */
 .about-me {
   background-color: rgb(255, 255, 255);
   padding: 20px;
 }
 
-.projects{
+
+/* -------------------Programming Languages------------------- */
+
+#programming-languages-1{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+  }
+  
+  #programming-languages-2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    }
+
+#projects{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color:var(--blue);
+
 }
 
 .project{
   text-decoration: none;
   /* background-image: linear-gradient(to right, rgb(206, 246, 255) , rgb(229, 225, 252)); */
-  background-color: rgba(255, 255, 255, 0.750);
+  background-color: rgba(255, 255, 255, 0.903);
   font-family: 'Montserrat', sans-serif;
   flex-direction: column;
   justify-content: space-around;
   color:var(--dark-grey);
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   border-radius: 1rem;
   justify-self: center;
   display: flex;
@@ -181,20 +189,21 @@ padding:20px;
   justify-content: center;
   cursor: pointer;
   text-align: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .project-img{
-max-height: 10rem;
-max-width: 17rem;
+max-height: 100px;
+max-width: 150px;
 }
 
 .form-section{
-background-color: rgba(255, 255, 255, 0.759);
+background-color: var(--white);
+padding: 30px;
 }
 
-.form {
+#form {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -202,6 +211,7 @@ background-color: rgba(255, 255, 255, 0.759);
   align-self: center;
   max-width: 100%;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 
@@ -230,8 +240,9 @@ align-items: center;
 
 .button, #submit{
   text-decoration: none;
-  background-color: rgb(35, 0, 193);
+  background:  linear-gradient(to right, var(--red),var(--blue));
   font-family: 'Montserrat', sans-serif;
+  border: 0px;
   font-weight: 600;
   display: block;
   color: white;
@@ -256,10 +267,10 @@ footer{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  background-color: rgb(232, 236, 255); 
+  background-color: var(--light-purple); 
 }
 
 
@@ -269,34 +280,34 @@ body {
 }
 
 
-/* #nav-item-1{
-  color: rgb(35, 0, 193);
-  padding-inline-end: 50px ;
+
+#created-by{
+  font-weight: 300;
+  margin-right: 60px;
 }
 
-#nav-item-2{
-  color:  rgb(35, 0, 193);
-  padding-inline-end: 50px ;
-} */
-#programming-languages-1{
-display: flex;
-justify-content: space-evenly;
-padding-bottom: 20px;
-}
 
-#programming-languages-2{
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 20px;
+@media (min-width: 1300px) {
+
+  .nav-bar{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .socials{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 60px;
   }
 
 
-*{
-  border: 1px solid red;
-}
-
-@media (min-width: 1300px) {
-  .projects{
+  #projects{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -305,8 +316,14 @@ padding-bottom: 20px;
     .socials{
       display: flex;
       justify-content: space-around;
-      margin-left: 60px;
+      /* margin-left: 60px; */
     }
+
+    .social{
+      width:40px;
+      height:40px;
+      margin-left: 30px;
+      }
 
     .description{
       justify-content: center
@@ -327,9 +344,6 @@ padding-bottom: 20px;
       max-width: 600px;
     }
 
-    .nav-bar{
-      height: 100px;
-    }
 
     .nav-item{
       font-size: 20px;
@@ -341,14 +355,9 @@ padding-bottom: 20px;
       width: 400px;
     }
 
-    .nav-bar{
-      height: 40px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      background-color: rgb(232, 236, 255); 
+    footer{
+      height: 100px;
     }
+
+  
  }

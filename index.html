@@ -25,12 +25,11 @@
                     <a href ="https://www.linkedin.com/in/anya-belkina-a96078106/"   >
                         <img src="images/linkedin.png"  class="social"/>
                     </a>  
-                    
                 </div>  
                 
                 <div class="menu">
-                <a href = "#projects" class="nav-item" id="nav-item-1"> Projects </a>
-                <a href = "form" class="nav-item" id="nav-item-2"> Contact me </a>
+                <a href="#projects" class="nav-item" id="nav-item-1"> Projects </a>
+                <a href="#form" class="nav-item" id="nav-item-2"> Contact me </a>
                 </div>
             </nav>
 
@@ -47,17 +46,19 @@
 <!-- MAIN -->
     <main>
         <section id="main-1">
-            <img src = "images/profile-photo.png" id="profile-photo"> 
-            <section class = "description">
+            <img src="images/profile-photo2.png" id="profile-photo"> 
+            <section class="description">
                 <h1>Hi, my name is Anya.</h1>
                 <p>I am a software developer and designer based in Perth.</p>
-                
+                  
                 <a class="button">See my projects</a>
             </section>
         </section>
 
         <section class = "about-me">
-            <h2>About me</h2>
+            <div class="title-underline">
+                 <h2>About me</h2>
+            </div>
             <p>Hey there! I'm Anya, a passionate web developer on a mission to make the digital world a more beautiful 
                 and accessible place. My heart beats in HTML, CSS, and JavaScript, and I'm on a constant quest to create 
                 stunning, responsive designs that not only catch your eye but also provide a seamless experience across all devices.
@@ -82,7 +83,7 @@
                 </div>
         </section>
        
-        <section class = "projects">
+        <section id="projects">
             <article class="project">
                 <h3>Project 1</h3>
                 <img src = "images/project-1.jpg" class="project-img"> 
@@ -91,7 +92,7 @@
             </article>
             <article class="project">
                 <h3>Project 2</h3>
-                <img src = "images/project-2.jpg" class="project-img"> 
+                <img src="images/project-2.jpg" class="project-img"> 
             </article>
 
             <article class="project">
@@ -101,10 +102,9 @@
         </section>
 
 
-        <section class = "form-section">
+        <section class="form-section">
             <h2>Liked my work?</h2>
-             <form class = "form">
-                    <h2>Get in touch</h2>
+             <form id="form">
                     <label for="yourname">First Name</label>
                     <input class = "input" type="text" id="yourname" name="yourname" placeholder="Your Name..">
                     <label for="email">E-mail</label>
@@ -123,8 +123,19 @@
 
 <!-- FOOTER -->
 <footer>
-    <p>Created by me =^.^=</p>
-    <p><a href="mailto:anyabelkina123@gmail.com">anyabelkina123@gmail.com</a></p>
+    <div class="socials">
+        <a href = "https://github.com/awesomeann" >
+            <img src="images/github.png" class="social"/>
+        </a>   
+        <a href = "https://www.instagram.com/awwesomeann" >
+            <img src="images/insta.png" class="social"/>
+        </a>               
+        <a href ="https://www.linkedin.com/in/anya-belkina-a96078106/"   >
+            <img src="images/linkedin.png"  class="social"/>
+        </a>  
+    </div>  
+    <p id="created-by">Created by me =^.^=</p>
+
 </footer>
     
     
