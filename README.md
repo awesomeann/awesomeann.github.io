@@ -10,14 +10,18 @@ Landing page contains navigation bar at the top, profile picture, social media l
 - [X] "Projects" section
 - [X] Links to external sites, e.g. GitHub and LinkedIn.
 ### Technical
-{{ Add a short paragraph describing the features below. }}
+My web site consist of two pages - landing page with the general information about me and Project pages - they are the placeholders for my future projects. 
+The nav bar menu at the top takes a user to the project section of the site or to the form using ids.
+Form sends the information to my email.
+The site deployed to GitHub pages.
+
 - [X] At least 2 web pages.
 - [X] Version controlled with Git
 - [X] Deployed on GitHub pages.
 - [X] Implements responsive design principles.
 - [X] Uses semantic HTML.
 ### Bonus (optional)
-{{ Add a short paragraph describing the features below, if you included any. }}
+Added the hover functionality for my buttons (change of color)
 - [X] Different styles for active, hover and focus states.
 - [ ] Include JavaScript to add some dynamic elements to your site. (Extra
 tricky!)
