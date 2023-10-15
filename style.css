@@ -53,6 +53,12 @@ p {
   font-size: large;
 }
 
+a{
+  font-size: 20px;
+  color: var(--onyx);
+  text-decoration: none;
+  font-weight: 600;
+}
 /* -------------------Text Decoration------------------- */
 
 .red-underline{
@@ -188,7 +194,6 @@ padding:20px;
 
 .project{
   text-decoration: none;
-  /* background-image: linear-gradient(to right, rgb(206, 246, 255) , rgb(229, 225, 252)); */
   background-color: rgba(255, 255, 255, 0.903);
   font-family: 'Montserrat', sans-serif;
   width: 300px;
@@ -206,7 +211,8 @@ padding:20px;
 }
 
 .project-img{
-  height: 60%;
+  margin-top:20px;
+  height: 70%;
 }
 
 .form-section{
@@ -253,6 +259,7 @@ align-items: center;
   text-decoration: none;
   background:  var(--red);
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
   border: 0px;
   font-weight: 600;
   display: block;
@@ -274,6 +281,14 @@ align-items: center;
 #form-button{
 display:flex;
 justify-content: center;
+}
+
+.button:hover, #submit:hover {
+  background-color: var(--blue); 
+}
+
+.button:focus, #submit:focus {
+  border: solid 2px var(--blue);
 }
 
 /* FOOTER */
@@ -389,7 +404,7 @@ body {
     }
 
     #project1-photo{
-      width: 80%;
+      max-width: 40%;
     }
   
  }
