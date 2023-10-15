@@ -11,7 +11,7 @@
   --purple: rgb(77, 0, 193);
   --white: rgb(255, 255, 255);
   --mid-grey: #5a6272ff;
-  --red: rgb(226, 59, 129);
+  --red: rgb(219 1 119);
 }
 
 /* -------------------default font style------------------- */
@@ -27,7 +27,7 @@ html{
 body{
   color:var(--onyx);
   width: 100%;
-  background: linear-gradient(rgb(255, 255, 255) ,rgb(232, 236, 255), rgb(246, 244, 255), rgb(217, 255, 251), rgb(235, 219, 248),  rgb(179, 223, 253) );
+  background: linear-gradient(rgb(255, 255, 255) ,rgb(232, 236, 255), rgb(250 249 255), rgb(207 213 255), rgb(210 235 255), rgb(179, 223, 253) );
 }
 
 
@@ -37,7 +37,7 @@ body{
 /* -------------------Text styles------------------- */
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
   margin-block-start: 0.10em;
   margin-block-end: 0.10em;
   font-weight: 600;
@@ -55,12 +55,17 @@ p {
 
 /* -------------------Text Decoration------------------- */
 
-.title-underline{
+.red-underline{
   width: 200px;
   border-bottom: solid 5px var(--red);
   margin-bottom: 20px;
 }
  
+.blue-underline{
+  width: 200px;
+  border-bottom: solid 5px var(--blue);
+  margin-bottom: 20px;
+}
   /* -------------------Image Styles------------------- */
 
 nav{
@@ -81,6 +86,7 @@ nav{
   display: flexbox;
   flex-direction: row;
   justify-content: flex-end;
+ 
  }
  
 .nav-bar{
@@ -92,6 +98,7 @@ nav{
   justify-content: flex-end;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  border-bottom: #b7b7b7;
 }
 
 .nav-item{
@@ -108,30 +115,8 @@ nav{
   margin-right: 10px;
 }
 
-/* -------------------Section with Social Media Icons------------------- */
 
-.socials{
-  width:0px;
-  height:0px;
-  }
-
-/* -------------------Each Social Media Icon------------------- */
-
-.social{
-  width:0px;
-  height:0px;
-}
-
-
-
-.language{
-height: 40px;
-width: 40px;
-text-decoration: none;
-padding-left: 20px;
-padding-right: 20px;
-
-}
+/* -------------------Description Section------------------- */
 
 .description {
 background-color:transparent;
@@ -141,6 +126,22 @@ align-items: center;
 padding:20px;
 }
 
+.description p, .description div{
+  padding-bottom: 20px;
+}
+
+.socials{
+  width:70%;
+  display: flex;
+  justify-content: space-around;
+  /* margin-left: 60px; */
+}
+
+.social{
+  width:30px;
+  height:30px;
+  }
+
 
 /* -------------------About Me Section------------------- */
 .about-me {
@@ -148,6 +149,15 @@ padding:20px;
   padding: 20px;
 }
 
+
+.language{
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  }
 
 /* -------------------Programming Languages------------------- */
 
@@ -163,11 +173,18 @@ padding:20px;
     padding-bottom: 40px;
     }
 
+
+/* -------------------Projects------------------- */
+#project-section{
+  padding:20px;
+}
+
+
 #projects{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:var(--blue);
+  /* background-color:var(--blue); */
 
 }
 
@@ -176,9 +193,6 @@ padding:20px;
   /* background-image: linear-gradient(to right, rgb(206, 246, 255) , rgb(229, 225, 252)); */
   background-color: rgba(255, 255, 255, 0.903);
   font-family: 'Montserrat', sans-serif;
-  flex-direction: column;
-  justify-content: space-around;
-  color:var(--dark-grey);
   width: 300px;
   height: 200px;
   border-radius: 1rem;
@@ -188,7 +202,6 @@ padding:20px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -240,7 +253,7 @@ align-items: center;
 
 .button, #submit{
   text-decoration: none;
-  background:  linear-gradient(to right, var(--red),var(--blue));
+  background:  var(--red);
   font-family: 'Montserrat', sans-serif;
   border: 0px;
   font-weight: 600;
@@ -267,10 +280,8 @@ footer{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  background-color: var(--light-purple); 
+  justify-content: space-around;
+  background-color: var(--blue); 
 }
 
 
@@ -289,21 +300,31 @@ body {
 
 @media (min-width: 1300px) {
 
+  h1 {
+    font-size: 40px;
+  }
+
+  p{
+    font-size: 24px;
+  }
   .nav-bar{
     height: 100px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     
+  }
+
+  .menu{
+  width: 30%;
   }
 
   .socials{
     height: auto;
-    width: auto;
+    width: 70%;
     display: flex;
     justify-content: space-around;
-    margin-left: 60px;
+    /* margin-left: 60px; */
   }
 
 
@@ -326,26 +347,21 @@ body {
       }
 
     .description{
-      justify-content: center
-
+      justify-content: space-evenly;
+      margin: 30px;
     }
 
     #main-1{
       display: flex;
       flex-direction: row-reverse;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
 
     #profile-photo {
-      max-width: 800px;
+      max-width: 40%;
     }
 
-    .description{
-      max-width: 600px;
-    }
-
-
-    .nav-item{
+     .nav-item{
       font-size: 20px;
       padding-left: 60px;
       padding-right: 10px;
@@ -357,6 +373,7 @@ body {
 
     footer{
       height: 100px;
+  
     }
 
   
