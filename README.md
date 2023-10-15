@@ -2,7 +2,8 @@
 [My portfolio site]( https://awesomeann.github.io )
 ## Project Requirements
 ### Content
-{{ Add a short paragraph describing the features below. }}
+Landing page contains navigation bar at the top, profile picture, social media links, "About me" section with the i.cons of the programming languages I will be using, list of the projects (placeholders), contact form and a footer. Projects contain screenshots of some random sites I found on internet, but they will be replaced with my projects when I get some.
+
 - [x] At least one profile picture
 - [X] Biography (at least 100 words)
 - [X] Functional Contact Form
@@ -30,4 +31,4 @@ screenshot that shows that.
 > You can do this by saving the images in a folder in your repo, and including
 them in your readme document with the following Markdown code:
 #### {{ image_title }}
-![ {{ Description of image }} ]( {{ ./relative_path_to_file }} )
+![ Link to the screenshots]( https://github.com/awesomeann/awesomeann.github.io/tree/main/screenshots )
