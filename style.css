@@ -103,11 +103,9 @@ nav{
 
 .nav-item{
   font-size: 16px;
-  padding-left: 30px;
   padding-right: 10px;
   text-decoration: none;
-  color: var(--onyx)
-
+  color: var(--onyx);
 }
 
 
@@ -164,13 +162,13 @@ padding:20px;
 #programming-languages-1{
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   }
   
   #programming-languages-2{
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     }
 
 
@@ -200,20 +198,20 @@ padding:20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   cursor: pointer;
   margin-bottom: 20px;
   margin-top: 20px;
+
 }
 
 .project-img{
-max-height: 100px;
-max-width: 150px;
+  height: 60%;
 }
 
 .form-section{
-background-color: var(--white);
-padding: 30px;
+  background-color: var(--white);
+  padding: 30px;
 }
 
 #form {
@@ -223,7 +221,7 @@ padding: 30px;
   background-color: rgba(128, 143, 255, 0.651);
   align-self: center;
   max-width: 100%;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-bottom: 20px;
 }
 
@@ -231,7 +229,7 @@ padding: 30px;
 .input {
 padding: 10px;
 border: 2px solid #fff;
-border-radius: 4px;
+border-radius: 6px;
 background-color: #fff;
 font-size: 0.8rem;
 text-decoration: none;
@@ -249,7 +247,7 @@ align-items: center;
 
 }
 
-/* Button design */
+/* Button Style */
 
 .button, #submit{
   text-decoration: none;
@@ -298,15 +296,16 @@ body {
 }
 
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
 
   h1 {
     font-size: 40px;
   }
 
   p{
-    font-size: 24px;
+    font-size: 20px;  
   }
+
   .nav-bar{
     height: 100px;
     display: flex;
@@ -316,7 +315,7 @@ body {
   }
 
   .menu{
-  width: 30%;
+  width: 500px;
   }
 
   .socials{
@@ -331,8 +330,14 @@ body {
   #projects{
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-around
     }
+
+
+  .project{
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
 
     .socials{
       display: flex;
@@ -343,12 +348,14 @@ body {
     .social{
       width:40px;
       height:40px;
-      margin-left: 30px;
+      
       }
 
     .description{
       justify-content: space-evenly;
       margin: 30px;
+      margin-top: 60px;
+  
     }
 
     #main-1{
@@ -367,6 +374,11 @@ body {
       padding-right: 10px;
     }
 
+
+    .language{
+      margin-top: 20px;
+    }
+
     .form{
       width: 400px;
     }
@@ -376,5 +388,8 @@ body {
   
     }
 
+    #project1-photo{
+      width: 80%;
+    }
   
  }
