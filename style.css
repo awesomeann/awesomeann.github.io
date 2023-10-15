@@ -381,6 +381,7 @@ body {
 
     #profile-photo {
       max-width: 40%;
+      max-height: 300px;
     }
 
      .nav-item{
